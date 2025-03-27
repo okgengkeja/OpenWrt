@@ -17,6 +17,6 @@
 #git clone https://github.com/esirplayground/luci-app-poweroff.git package/luci-app-poweroff
 git clone https://github.com/immortalwrt/homeproxy.git package/homeproxy
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/luci-app-nikki
-git clone https://github.com/hudra0/qosmate.git package/luci-app-qosmate
+#git clone https://github.com/hudra0/qosmate.git package/luci-app-qosmate
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
