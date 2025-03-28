@@ -15,9 +15,9 @@ sed -i 's/192.168.1.1/192.168.30.2/g' package/base-files/files/bin/config_genera
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-rm -rf feeds/packages/lang/golang
+#rm -rf feeds/packages/lang/golang
 
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+#git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
