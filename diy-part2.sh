@@ -15,6 +15,10 @@
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+sed -i 's/--set=llvm.download-ci-llvm=true/--set=source.crates-io.replace-with=mirror \\\
+        --set=source.mirror.registry=sparse+https:\/\/mirrors.bfsu.edu.cn\/crates.io-index\/ \\\
+        --set=llvm.download-ci-llvm=false/' package/feeds/packages/rust/Makefile
+
 rm -rf feeds/packages/lang/golang
 
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
